@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js"></script>
-
+   
+    
     <title>Mapa Estante</title>
 </head>
 
 <body>
-    <p> Insira o número ou nome do produto desejado</p>
-  
-    <form id="formulario" autocomplete="off">
-        <fieldset>
-            <legend>Pesquisar</legend>
-            <label>Produto:</label><input class="campo_nome" type="text">
-            <input class="btn_submit" type="submit" value="Enviar">
-        </fieldset>
-      </form>
-      <fieldset>
-        <legend>Resultado</legend>
-       <table>
-            <thead>produto:nome_Produto</thead>
-           <tr> <th>código</th><th>nome</th><th>validade</th><th>rua</th><th>lado</th><th>predio</th><th>andar</th></tr>
-            <tr><td>01</td><td>produto1</td><td>01/01/23</td><td>resultados</td><td>a</td><td>1</td><td>1</td></tr>
-            
-            
-       </table>
-    </fieldset>
 
+    <p> Insira o número ou nome do produto desejado</p>
+    
+         <fieldset>
+            <legend>Pesquisar</legend>
+            <label>Produto:</label>
+            <input id="inputText" class="input_pesquisa" type="text">
+            <button class="btn_submit" type="submit" value="Enviar"> Enviar</button>
+        </fieldset>
+ 
+    <fieldset>
+        <legend>Resultado</legend>
+        <table id="tabelaResultado">
+               
+        </table>
+    </fieldset>
+ 
 </body>
 
 </html>

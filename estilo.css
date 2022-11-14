@@ -1,22 +1,43 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-fieldset
-{
-border: 1px solid #999999; 
-border-radius: 3px;
+h1,h2,h3,h4,span,textarea,a{
+  margin: 3px;
+  padding: 3px;
 }
-legend
-{
+
+fieldset{
+  border: 1px solid #999999; 
+  border-radius: 3px;
+  margin: 5px;
+}
+
+legend{
   font-style:bold;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
+  margin: 5px;
 }
 
-table,th,td,thead,tr{
-    border-collapse: collapse;
-    border: 1px solid #999999; 
-    margin-top: 10px;
-    padding: 5px;
+table,th,td,tr{
+  border-collapse: collapse;
+  border: 1px solid #999999; 
+  margin-top: 10px;
+  padding: 2px;
+  margin: 1px;
+  text-align: center;
+}
+th{
+  background-color: #999999;
+  border: 1px solid black;
+  color: #fff;
+}
+
+input,label{
+  margin: 3px;
+  padding: 3px;
 }
