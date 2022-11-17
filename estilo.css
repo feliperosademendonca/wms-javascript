@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+
+body{
+  background-color: #eeeeee;
+  color: #555;
+
+}
+
 h1,h2,h3,h4,span,textarea,a{
   margin: 3px;
   padding: 3px;
@@ -37,7 +44,33 @@ th{
   color: #fff;
 }
 
-input,label{
+label{
   margin: 3px;
   padding: 3px;
+}
+
+input{
+  margin: 3px;
+  height: 20px;
+  text-align: center;
+  border: none;
+  border: 1px solid #4444;
+  background-color: #ffff;
+  color: #555;
+}
+
+button{
+  width: 200px;
+  margin: 3px;
+  height: 20px;
+  text-align: center;
+  border: none;
+  border: 1px solid #4444;
+  background-color: #555;
+  color: #fff;
+}
+
+footer>p{
+  font-size:11px;
+  text-align: center;
 }

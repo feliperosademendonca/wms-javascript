@@ -6,7 +6,8 @@
 # pesquisa por data de validade
 # pesquisars endereços vazios
 # add endereços
-
+# listar produto pesquisado por data de validade
+# listarr endereços vazios
 
 **concluida**
 estilo css

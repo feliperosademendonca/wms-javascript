@@ -1,5 +1,5 @@
 
-const end = [
+var end = [
     {"id":"1","código":"","nome":"","rua":"a", "lado":"esquerdo","Predio":"1","andar":"1",},
     {"id":"2","código":"","nome":"","rua":"a", "lado":"esquerdo","Predio":"1","andar":"2",},
     {"id":"3","código":"","nome":"","rua":"a", "lado":"esquerdo","Predio":"1","andar":"3",},
@@ -28,4 +28,4 @@ const end = [
   
   ]
 
-  export{end}
+  export default{end}

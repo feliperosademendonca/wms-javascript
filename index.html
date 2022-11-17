@@ -13,23 +13,63 @@
 </head>
 
 <body>
+    <fieldset>
 
-    <p> Insira o número ou nome do produto desejado</p>
-    
+ <legend><h1>SISTEMA DE CONTROLE DE ENDEREÇO DE ESTANTES(SisEnd)</h1></legend>    
          <fieldset>
-            <legend>Pesquisar</legend>
+            <legend>Insira o EAN ou o NOME do produto desejado</legend>
             <label>Produto:</label>
-            <input id="inputText" class="input_pesquisa" type="text">
-            <button class="btn_submit" type="submit" value="Enviar"> Enviar</button>
+            <input id="inputText" class="input-pesquisa" type="text">
+            <button id="btn-Sub-ID" class="btn-submit" type="submit" value="Enviar" name="btn-Pesquisar">PESQUISAR</button>   
         </fieldset>
  
-    <fieldset>
+    <fieldset id="fieldset-resultado">
         <legend>Resultado</legend>
         <table id="tabelaResultado">
-               
         </table>
     </fieldset>
  
-</body>
 
+    <div id="add-Prod-End">
+        <fieldset>
+        <legend>Adicionar Produto Ao Endereço</legend>
+
+        <label>Numero EAN do Produto</label><br>
+        <input type="text" name="EAN-NAME" id="EAN-ID" placeholder="NUMERO EAN"><br>
+
+        <label>Validade</label><br>
+        <input type="date" name="DATE-VALIDADE" id="DATE-VALIDADE-ID" placeholder="VALIDADE"><br>
+
+        <label>Endereço</label><br>
+        <input type="text" name="RUA" id="RUA-ID" placeholder="RUA">
+        <input type="text" name="RUA" id="RUA-ID" placeholder="PREDIO">
+        <input type="text" name="RUA" id="RUA-ID" placeholder="ANDAR"><br>
+
+        <button type="submit" name="EAN-BTN" id="EAN-BTN">ADCIONAR</button>
+        </fieldset>
+    </div>
+
+    <div id="rmv-Prod-End">
+        <fieldset>
+        <legend>Remover Produto do Endereço</legend>
+
+        <label>Endereço</label><br>
+        <input type="text" name="RUA" id="RUA-ID" placeholder="RUA">
+        <input type="text" name="RUA" id="RUA-ID" placeholder="PREDIO">
+        <input type="text" name="RUA" id="RUA-ID" placeholder="ANDAR">
+
+        <legend>Resultado</legend>
+        <table id="tabelaResultado">
+        </table><br>
+        <button id="BTN-RMV-PROD-END-ID" class="BTN-RMV" name="RMV-PROD-END" placeholder="REMOVER PRODUTO" >REMOVER</button>   
+
+         </fieldset>
+    </div>
+</fieldset>
+
+</body>
+<footer>
+    <p>Destribuido sob a Lincensa MIT</p>
+    <p>Criado por @feliperosademendonca | versão 0.1.Delta</p>
+</footer>
 </html>
