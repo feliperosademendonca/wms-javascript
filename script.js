@@ -42,21 +42,14 @@ $(document).ready(function() {
 
 //Pesquisar  
 $("button[name=btn-Pesquisar]").click(function(){
- //alert("clicou")
+//alert("clicou")
 
-  let inputPesquisa= $('#inputText').val()
- 
-//alert(inputPesquisa)
-
-
-//percorre o arrey de objetos e seus valores
+  let inputPesquisa= parseInt($('#inputText').val())
+   //percorre o arrey de objetos e seus valores
 $.each(prod, function(index, prop ){
-  console.log("index: "+index+ ', EAN: ' +prop.EAN +", codigo: "+ prop.codigo+", nome: "+prop.nome+", validade: "+prop.validade,+", quantidade: "+prop.quantidade)
-//teste de iguadade
-
 
 if(inputPesquisa==prop.EAN){
- 
+  
  let tdEan = prod[index].EAN
  let tdCodigo = prod[index].codigo
  let tdNome = prod[index].nome
@@ -68,8 +61,10 @@ if(inputPesquisa==prop.EAN){
   +'<tr><td>'+tdEan+'</td><td>'+tdCodigo+'</td><td>'+tdNome+'</td><td>'+tdValidade+'</td><td>'+tdQuantidade+'</td><td>'+""+'</td><td>'+""+'</td><td>'+""+'</td></tr><br>'
   +'</tbody>'
   )
+  return false;
 
-}
+
+} 
 
 })
 

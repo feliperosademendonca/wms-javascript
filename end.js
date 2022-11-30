@@ -25,7 +25,6 @@ var end = [
     {"id":"22","código":"","nome":"","rua":"a", "lado":"esquerdo","Predio":"6","andar":"3",},
     {"id":"23","código":"","nome":"","rua":"a", "lado":"esquerdo","Predio":"6","andar":"4",},
   
-  
   ]
 
   export default{end}
