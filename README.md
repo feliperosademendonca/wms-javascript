@@ -1,15 +1,15 @@
 **tarefas**
 # add captura de codigo de barra
 # add banco de dados
-# pesquisa por código
 # pesquisa por nome
 # pesquisa por data de validade
 # pesquisars endereços vazios
-# add endereços
+# add produtos aos endereços
 # listar produto pesquisado por data de validade
-# listarr endereços vazios
 
 **concluida**
+pesquisa por EAN(codigo produto)
+add quantidade 
 estilo css
 add campo de pesquisa
 add tabela dinamica de resultado

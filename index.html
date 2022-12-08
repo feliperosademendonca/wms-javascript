@@ -18,14 +18,13 @@
  <legend><h1>SISTEMA DE CONTROLE DE ENDEREÇO DE ESTANTES(SisEnd)</h1></legend>    
          <fieldset>
             <legend>Insira o EAN do produto procurado</legend>
-            <label>Produto:</label>
-            <input id="inputText" class="input-pesquisa" type="text">
+            <label>Produto:<input id="inputText" class="input-pesquisa" type="text"></label>
             <button id="btn-Sub-ID" class="btn-submit" type="submit" value="Enviar" name="btn-Pesquisar">PESQUISAR</button>   
         </fieldset>
  
     <fieldset id="fieldset-resultado">
-        <legend>Resultado</legend>
-        <table id="tabelaResultado">
+        <legend>Resultado
+        <table id="tabelaResultado"></legend>
         </table>
     </fieldset>
  
@@ -34,18 +33,20 @@
         <fieldset>
         <legend>Adicionar Produto Ao Endereço</legend>
 
-        <label>Numero EAN do Produto</label><br>
-        <input type="text" name="EAN-NAME" id="EAN-ID" placeholder="NUMERO EAN"><br>
+        <label>Numero EAN do Produto:
+        <input type="text" name="ADD-EAN" id="ADD-EAN-ID" placeholder=" "></label><br>
 
-        <label>Validade</label><br>
-        <input type="date" name="DATE-VALIDADE" id="DATE-VALIDADE-ID" placeholder="VALIDADE"><br>
+        <label>Validade:
+        <input type="date" name="ADD-DATE-VALIDADE" id="ADD-DATE-VALIDADE-ID" placeholder=" "></label><br>
 
-        <label>Endereço</label><br>
-        <input type="text" name="RUA" id="RUA-ID" placeholder="RUA">
-        <input type="text" name="RUA" id="RUA-ID" placeholder="PREDIO">
-        <input type="text" name="RUA" id="RUA-ID" placeholder="ANDAR"><br>
+        <label>Quantidade:
+            <input type="number" name="ADD-QUANTIDADE" id="ADD-QNATIDADE-ID" placeholder=" "></label><br>
+        <label>Endereço:</label>
+        <input type="text" name="ADD-RUA" id="ADD-RUA-ID" placeholder="rua">
+        <input type="text" name="ADD-PREDIO" id="ADD-PREDIO-ID" placeholder="predio ">
+        <input type="text" name="ADD-ANDAR" id="ADD-ANDAR-ID" placeholder="andar "><br>
 
-        <button type="submit" name="EAN-BTN" id="EAN-BTN">ADCIONAR</button>
+        <button type="submit" name="ADD-EAN" id="ADD-EAN-BTN">ADCIONAR</button>
         </fieldset>
     </div>
 
@@ -53,14 +54,12 @@
         <fieldset>
         <legend>Remover Produto do Endereço</legend>
 
-        <label>Endereço</label><br>
-        <input type="text" name="RUA" id="RUA-ID" placeholder="RUA">
-        <input type="text" name="RUA" id="RUA-ID" placeholder="PREDIO">
-        <input type="text" name="RUA" id="RUA-ID" placeholder="ANDAR">
+        <label>Endereço:<br>
+            <input type="text" name="RMV-RUA" id="RMV-RUA-ID" placeholder=" ">
+            <input type="text" name="RMV-PREDIO" id="RMV-PREDIO-ID" placeholder=" ">
+            <input type="text" name="RMV-ANDAR" id="RMV-ANDAR-ID" placeholder=" ">
+        </label>
 
-        <legend>Resultado</legend>
-        <table id="tabelaResultado">
-        </table><br>
         <button id="BTN-RMV-PROD-END-ID" class="BTN-RMV" name="RMV-PROD-END" placeholder="REMOVER PRODUTO" >REMOVER</button>   
 
          </fieldset>
