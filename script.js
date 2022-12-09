@@ -56,7 +56,7 @@ $(document).ready(function() {
                 let tdQuantidade = prod[index].quantidade
                 let tdValidade = prod[index].validade
                 
-                $('table').html( 
+                $('#tabelaResultado').html( 
                     +'<tbody>'
                     +'<tr> <th>EAN</th><th>cod</th><th>nome</th><th>valid</th><th>quantidade</th><th>rua</th><th>lado</th><th>predio</th><th>andar</th></tr>'
                     +'<tr><td>'+tdEan+'</td><td>'+tdCodigo+'</td><td>'+tdNome+'</td><td>'+tdValidade+'</td><td>'+tdQuantidade+'</td><td>'+""+'</td><td>'+""+'</td><td>'+""+'</td></tr><br>'
@@ -88,16 +88,29 @@ $(document).ready(function() {
       }
  
      $.each(prod, function(index, element ){
-      if(prod_add_end.ean==element.EAN){
-        element.quantidade = prod[index].quantidade+=parseInt(prod_add_end.quantidade)
-        element.validade=prod[index].validade
-        element.rua=prod[index].rua
-        element.predio=prod[index].predio
-        element.andar=prod[index].andar
-        alert('funcionou!')
-        return false
-      }else{
-        alert('EAN não encontrado')
+      if(prod_add_end.ean==element.EAN && element.quantidade !=0){
+        let ean      =  element.EAN
+        let codigo =  element.codigo=prod[index].codigo
+        let nome     =  element.nome
+        let quantidade   =  element.quantidade = prod[index].quantidade+=parseInt(prod_add_end.quantidade)
+        let validade =  element.validade=prod[index].validade
+        let rua      =  element.rua=prod[index].rua
+        let lado   =  element.lado=prod[index].lado
+        let predio   =  element.predio=prod[index].predio
+        let andar    =  element.andar=prod[index].andar
+        
+        $('table[name=table-add]').html( 
+            +'<tbody>'
+            +'<tr>   <th>EAN</th>         <th>cod</th>  <th>nome</th>    <th>valid</th>     <th>quantidade</th>    <th>rua</th>     <th>lado</th>   <th>predio</th>   <th>andar</th></tr>'
+            +'<tr><td>'+ean+'</td><td>'+codigo+'</td><td>'+nome+'</td><td>'+validade+'</td><td>'+quantidade+'</td><td>'+rua+'</td><td>'+lado+'</td><td>'+predio+'</td> td>'+andar+'</td> </tr><br>'
+            +'</tbody>'
+          )
+
+          console.log(prod)
+          return false
+          //7894900011511
+        }else{
+          alert('EAN não encontrado')
         return false
       }
     })
