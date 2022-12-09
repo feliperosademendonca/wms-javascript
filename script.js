@@ -90,10 +90,11 @@ $(document).ready(function() {
      $.each(prod, function(index, element ){
       if(prod_add_end.ean==element.EAN){
         element.quantidade = prod[index].quantidade+=parseInt(prod_add_end.quantidade)
-        element.validade=validade
-        element.rua=rua
-        element.predio=predio
-        element.andar=andar
+        element.validade=prod[index].validade
+        element.rua=prod[index].rua
+        element.predio=prod[index].predio
+        element.andar=prod[index].andar
+        alert('funcionou!')
         return false
       }else{
         alert('EAN não encontrado')
