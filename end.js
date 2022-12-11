@@ -1,5 +1,5 @@
 
-var end = [
+var End = [
     {"id":"1","código":"","nome":"","rua":"a", "lado":"esquerdo","Predio":"1","andar":"1",},
     {"id":"2","código":"","nome":"","rua":"a", "lado":"esquerdo","Predio":"1","andar":"2",},
     {"id":"3","código":"","nome":"","rua":"a", "lado":"esquerdo","Predio":"1","andar":"3",},
@@ -27,4 +27,4 @@ var end = [
   
   ]
 
-  export default{end}
+  export default End
