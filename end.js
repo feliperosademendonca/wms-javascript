@@ -27,4 +27,4 @@ var End = [
   
   ]
 
-  export default End
+  export {End}

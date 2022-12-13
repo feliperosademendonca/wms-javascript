@@ -1,8 +1,28 @@
 
-var prod= Prod
-/*
+const Express= require('express')
+const app  =Express()
 
-[
+var jsdom = require("jsdom");
+const { dirname } = require('path');
+const { JSDOM } = jsdom;
+const { window } = new JSDOM();
+const { document } = (new JSDOM('')).window;
+global.document = document;
+
+var $ = jQuery = require('jquery')(window);
+
+app.get('/', function(req, res) {
+  res.sendFile( __dirname + '/index.html');
+}
+)
+
+
+
+
+var prod = require('./prod')
+ console.log(prod[1])
+//var end= import ("./end");
+/*var prod[
  {"EAN":7894900011511, "codigo":01,"nome":"coca 350ml unid","validade":"01/01/23","quantidade":900},
  {"EAN":7894900011517, "codigo":02,"nome":"coca 1lt unid","validade":"01/01/23","quantidade":800},
  {"EAN":7894900011512, "codigo":03,"nome":"coca 2lt unid","validade":"01/01/23","quantidade":800},
@@ -40,14 +60,11 @@ var prod= Prod
 ]
 
 */
-import { prod } from "./prod";
 
-import { end } from "./end";
+ 
 
 //carrega página
 $(document).ready(function() {
-
-
 //Pesquisar  
   $("button[name=btn-Pesquisar]").click(function(){
   //alert("clicou em pesquisar")
@@ -134,3 +151,6 @@ $(document).ready(function() {
   
 //ultima chave da função   
 })
+
+console.log("Start Server NODE")
+app.listen(3000);
